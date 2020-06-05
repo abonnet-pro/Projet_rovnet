@@ -1,0 +1,4 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_q_gamepad.html" title="La classe QGamepad est utilisée pour accéder à l&#39;état actuel du matériel de la manette de jeu connect..." alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node2" href="$class_manette.html" title="Classe permettant une communication entre le rov et la manette. " alt="" coords="141,5,211,32"/>
+</map>

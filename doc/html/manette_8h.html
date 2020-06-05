@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ROV&#39;NET: Référence du fichier manette.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone_robot.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ROV&#39;NET
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2020</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e845099e14ed0e1cd96f527541cef148.html">Projet_Rovnet</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier manette.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier qui contient la déclaration de la classe <a class="el" href="class_manette.html" title="Classe permettant une communication entre le rov et la manette. ">Manette</a>.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;QObject&gt;</code><br />
+<code>#include &lt;QtCore/QCoreApplication&gt;</code><br />
+<code>#include &lt;QtGamepad/QGamepad&gt;</code><br />
+<code>#include &lt;QDebug&gt;</code><br />
+</div>
+<p><a href="manette_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etat_manette_bouton.html">EtatManetteBouton</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure qui définit l'état de la manette en mode pilotage de la pince.  <a href="struct_etat_manette_bouton.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etat_manette_pilotage.html">EtatManettePilotage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure qui définit l'état de la manette en mode pilotage de la pince.  <a href="struct_etat_manette_pilotage.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etat_manette_deplacement.html">EtatManetteDeplacement</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure qui définit l'état de la manette en mode déplacement du robot.  <a href="struct_etat_manette_deplacement.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manette.html">Manette</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe permettant une communication entre le rov et la manette.  <a href="class_manette.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a1ae244fc787303cd46a9b684fb4b4056"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#a1ae244fc787303cd46a9b684fb4b4056">TAUX_VALIDITE_JOYSTICK</a>&#160;&#160;&#160;0.50</td></tr>
+<tr class="memdesc:a1ae244fc787303cd46a9b684fb4b4056"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini le taux d'acceptation de la valeur du joystick  <a href="#a1ae244fc787303cd46a9b684fb4b4056">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1ae244fc787303cd46a9b684fb4b4056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e43ead1d984ddabb462b55010d12f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#a26e43ead1d984ddabb462b55010d12f6">REDUCTION_VITESSE</a>&#160;&#160;&#160;0.75</td></tr>
+<tr class="memdesc:a26e43ead1d984ddabb462b55010d12f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini le taux de reduction de la puissance lors d'un mouvement  <a href="#a26e43ead1d984ddabb462b55010d12f6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a26e43ead1d984ddabb462b55010d12f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16ccf2890fcfc78a47402fe94becb6ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#a16ccf2890fcfc78a47402fe94becb6ca">IMMOBILE</a>&#160;&#160;&#160;&quot;0&quot;</td></tr>
+<tr class="memdesc:a16ccf2890fcfc78a47402fe94becb6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du paramètre de la trame lors du mouvement IMMOBILE  <a href="#a16ccf2890fcfc78a47402fe94becb6ca">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a16ccf2890fcfc78a47402fe94becb6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7afe629b79f044b909a1122578976339"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#a7afe629b79f044b909a1122578976339">AVANCE</a>&#160;&#160;&#160;&quot;AVANCE&quot;</td></tr>
+<tr class="memdesc:a7afe629b79f044b909a1122578976339"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du paramètre de la trame lors du mouvement AVANCER  <a href="#a7afe629b79f044b909a1122578976339">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7afe629b79f044b909a1122578976339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea139e87a80e899b0a2a927baf14a33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#aeea139e87a80e899b0a2a927baf14a33">RECULE</a>&#160;&#160;&#160;&quot;RECULE&quot;</td></tr>
+<tr class="memdesc:aeea139e87a80e899b0a2a927baf14a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du paramètre de la trame lors du mouvement RECULER  <a href="#aeea139e87a80e899b0a2a927baf14a33">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aeea139e87a80e899b0a2a927baf14a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae091878711af627f7fafa3f8bdf34bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#aae091878711af627f7fafa3f8bdf34bf">DESCEND</a>&#160;&#160;&#160;&quot;DESCEND&quot;</td></tr>
+<tr class="memdesc:aae091878711af627f7fafa3f8bdf34bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du paramètre de la trame lors du mouvement DESCENDRE  <a href="#aae091878711af627f7fafa3f8bdf34bf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aae091878711af627f7fafa3f8bdf34bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c5fea82ab18e55e94e4da8765471e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#a41c5fea82ab18e55e94e4da8765471e3">MONTE</a>&#160;&#160;&#160;&quot;MONTE&quot;</td></tr>
+<tr class="memdesc:a41c5fea82ab18e55e94e4da8765471e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du paramètre de la trame lors du mouvement MONTER  <a href="#a41c5fea82ab18e55e94e4da8765471e3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a41c5fea82ab18e55e94e4da8765471e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af07f8bf974fdf76afd17f2b97ac15a22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#af07f8bf974fdf76afd17f2b97ac15a22">GAUCHE</a>&#160;&#160;&#160;&quot;GAUCHE&quot;</td></tr>
+<tr class="memdesc:af07f8bf974fdf76afd17f2b97ac15a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du paramètre de la trame lors du mouvement GAUCHE  <a href="#af07f8bf974fdf76afd17f2b97ac15a22">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af07f8bf974fdf76afd17f2b97ac15a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af625d3f3bc022848a558f2b18def5b15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#af625d3f3bc022848a558f2b18def5b15">DROITE</a>&#160;&#160;&#160;&quot;DROITE&quot;</td></tr>
+<tr class="memdesc:af625d3f3bc022848a558f2b18def5b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du paramètre de la trame lors du mouvement DROITE  <a href="#af625d3f3bc022848a558f2b18def5b15">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af625d3f3bc022848a558f2b18def5b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d14fc3b862ee6b41366ac22e9737025"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#a0d14fc3b862ee6b41366ac22e9737025">RETOUR_ETAT_INITIAL</a>&#160;&#160;&#160;&quot;INIT&quot;</td></tr>
+<tr class="memdesc:a0d14fc3b862ee6b41366ac22e9737025"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du paramètre de la trame lors d'un retour à l'etat initial  <a href="#a0d14fc3b862ee6b41366ac22e9737025">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0d14fc3b862ee6b41366ac22e9737025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0259cc955736c3970883196448e0476a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#a0259cc955736c3970883196448e0476a">OUVERTURE_PINCE</a>&#160;&#160;&#160;&quot;O&quot;</td></tr>
+<tr class="memdesc:a0259cc955736c3970883196448e0476a"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du paramètre de la trame lors de l'ouverture de la pince  <a href="#a0259cc955736c3970883196448e0476a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0259cc955736c3970883196448e0476a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c242b29a47122b6c528f2bcb73a29e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#a1c242b29a47122b6c528f2bcb73a29e2">FERMETURE_PINCE</a>&#160;&#160;&#160;&quot;F&quot;</td></tr>
+<tr class="memdesc:a1c242b29a47122b6c528f2bcb73a29e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du paramètre de la trame lors de la fermeture de la pince  <a href="#a1c242b29a47122b6c528f2bcb73a29e2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1c242b29a47122b6c528f2bcb73a29e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb63c058f63189b11f10b79f90459e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#afeb63c058f63189b11f10b79f90459e2">POSER_OBJET_DANS_BAC</a>&#160;&#160;&#160;&quot;BAC&quot;</td></tr>
+<tr class="memdesc:afeb63c058f63189b11f10b79f90459e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du paramètre de la trame lorsque l'on pose l'objet dans le bac  <a href="#afeb63c058f63189b11f10b79f90459e2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afeb63c058f63189b11f10b79f90459e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81fd560b0b9c7c7cde5ac335fefa4c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#aa81fd560b0b9c7c7cde5ac335fefa4c3">CAMERA_DROITE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:aa81fd560b0b9c7c7cde5ac335fefa4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du double retourné par le signal lorsque le joystick de la manette est poussé a fond sur la droite  <a href="#aa81fd560b0b9c7c7cde5ac335fefa4c3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa81fd560b0b9c7c7cde5ac335fefa4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7390be8c9f6019e070951ebef00c3529"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#a7390be8c9f6019e070951ebef00c3529">CAMERA_GAUCHE</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memdesc:a7390be8c9f6019e070951ebef00c3529"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du double retourné par le signal lorsque le joystick de la manette est poussé a fond sur la gauche  <a href="#a7390be8c9f6019e070951ebef00c3529">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7390be8c9f6019e070951ebef00c3529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4683b40a863ce725b9dffe57df758312"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#a4683b40a863ce725b9dffe57df758312">CAMERA_HAUT</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memdesc:a4683b40a863ce725b9dffe57df758312"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du double retourné par le signal lorsque le joystick de la manette est poussé a fond sur le haut  <a href="#a4683b40a863ce725b9dffe57df758312">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4683b40a863ce725b9dffe57df758312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4938d166a83f56a4261513560c0139b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manette_8h.html#ac4938d166a83f56a4261513560c0139b">CAMERA_BAS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ac4938d166a83f56a4261513560c0139b"><td class="mdescLeft">&#160;</td><td class="mdescRight">défini la valeur du double retourné par le signal lorsque le joystick de la manette est poussé a fond sur le bass  <a href="#ac4938d166a83f56a4261513560c0139b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac4938d166a83f56a4261513560c0139b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="a7afe629b79f044b909a1122578976339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7afe629b79f044b909a1122578976339">&#9670;&nbsp;</a></span>AVANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AVANCE&#160;&#160;&#160;&quot;AVANCE&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#ab5eb6972f366aa7527b2b27da5539638">Manette::determinerTramePilotageBras()</a>.</p>
+
+</div>
+</div>
+<a id="ac4938d166a83f56a4261513560c0139b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4938d166a83f56a4261513560c0139b">&#9670;&nbsp;</a></span>CAMERA_BAS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAMERA_BAS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa81fd560b0b9c7c7cde5ac335fefa4c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa81fd560b0b9c7c7cde5ac335fefa4c3">&#9670;&nbsp;</a></span>CAMERA_DROITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAMERA_DROITE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7390be8c9f6019e070951ebef00c3529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7390be8c9f6019e070951ebef00c3529">&#9670;&nbsp;</a></span>CAMERA_GAUCHE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAMERA_GAUCHE&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4683b40a863ce725b9dffe57df758312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4683b40a863ce725b9dffe57df758312">&#9670;&nbsp;</a></span>CAMERA_HAUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAMERA_HAUT&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae091878711af627f7fafa3f8bdf34bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae091878711af627f7fafa3f8bdf34bf">&#9670;&nbsp;</a></span>DESCEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DESCEND&#160;&#160;&#160;&quot;DESCEND&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#ab5eb6972f366aa7527b2b27da5539638">Manette::determinerTramePilotageBras()</a>.</p>
+
+</div>
+</div>
+<a id="af625d3f3bc022848a558f2b18def5b15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af625d3f3bc022848a558f2b18def5b15">&#9670;&nbsp;</a></span>DROITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DROITE&#160;&#160;&#160;&quot;DROITE&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#ab5eb6972f366aa7527b2b27da5539638">Manette::determinerTramePilotageBras()</a>.</p>
+
+</div>
+</div>
+<a id="a1c242b29a47122b6c528f2bcb73a29e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c242b29a47122b6c528f2bcb73a29e2">&#9670;&nbsp;</a></span>FERMETURE_PINCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FERMETURE_PINCE&#160;&#160;&#160;&quot;F&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#a3fb9d1245400b6bb6379fbb63a8099ba">Manette::determinerTrameBouton()</a>.</p>
+
+</div>
+</div>
+<a id="af07f8bf974fdf76afd17f2b97ac15a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af07f8bf974fdf76afd17f2b97ac15a22">&#9670;&nbsp;</a></span>GAUCHE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GAUCHE&#160;&#160;&#160;&quot;GAUCHE&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#ab5eb6972f366aa7527b2b27da5539638">Manette::determinerTramePilotageBras()</a>.</p>
+
+</div>
+</div>
+<a id="a16ccf2890fcfc78a47402fe94becb6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16ccf2890fcfc78a47402fe94becb6ca">&#9670;&nbsp;</a></span>IMMOBILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMMOBILE&#160;&#160;&#160;&quot;0&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#a3fb9d1245400b6bb6379fbb63a8099ba">Manette::determinerTrameBouton()</a>, et <a class="el" href="class_manette.html#ab5eb6972f366aa7527b2b27da5539638">Manette::determinerTramePilotageBras()</a>.</p>
+
+</div>
+</div>
+<a id="a41c5fea82ab18e55e94e4da8765471e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41c5fea82ab18e55e94e4da8765471e3">&#9670;&nbsp;</a></span>MONTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MONTE&#160;&#160;&#160;&quot;MONTE&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#ab5eb6972f366aa7527b2b27da5539638">Manette::determinerTramePilotageBras()</a>.</p>
+
+</div>
+</div>
+<a id="a0259cc955736c3970883196448e0476a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0259cc955736c3970883196448e0476a">&#9670;&nbsp;</a></span>OUVERTURE_PINCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OUVERTURE_PINCE&#160;&#160;&#160;&quot;O&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#a3fb9d1245400b6bb6379fbb63a8099ba">Manette::determinerTrameBouton()</a>.</p>
+
+</div>
+</div>
+<a id="afeb63c058f63189b11f10b79f90459e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb63c058f63189b11f10b79f90459e2">&#9670;&nbsp;</a></span>POSER_OBJET_DANS_BAC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define POSER_OBJET_DANS_BAC&#160;&#160;&#160;&quot;BAC&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#a3fb9d1245400b6bb6379fbb63a8099ba">Manette::determinerTrameBouton()</a>.</p>
+
+</div>
+</div>
+<a id="aeea139e87a80e899b0a2a927baf14a33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeea139e87a80e899b0a2a927baf14a33">&#9670;&nbsp;</a></span>RECULE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RECULE&#160;&#160;&#160;&quot;RECULE&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#ab5eb6972f366aa7527b2b27da5539638">Manette::determinerTramePilotageBras()</a>.</p>
+
+</div>
+</div>
+<a id="a26e43ead1d984ddabb462b55010d12f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26e43ead1d984ddabb462b55010d12f6">&#9670;&nbsp;</a></span>REDUCTION_VITESSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REDUCTION_VITESSE&#160;&#160;&#160;0.75</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#a97a50caac68954a229c7e9461e7f4232">Manette::determinerTrameDeplacementRobot()</a>.</p>
+
+</div>
+</div>
+<a id="a0d14fc3b862ee6b41366ac22e9737025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d14fc3b862ee6b41366ac22e9737025">&#9670;&nbsp;</a></span>RETOUR_ETAT_INITIAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RETOUR_ETAT_INITIAL&#160;&#160;&#160;&quot;INIT&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#a3fb9d1245400b6bb6379fbb63a8099ba">Manette::determinerTrameBouton()</a>.</p>
+
+</div>
+</div>
+<a id="a1ae244fc787303cd46a9b684fb4b4056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae244fc787303cd46a9b684fb4b4056">&#9670;&nbsp;</a></span>TAUX_VALIDITE_JOYSTICK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAUX_VALIDITE_JOYSTICK&#160;&#160;&#160;0.50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_manette.html#a37202e63cf8662fed5b3a2efc8eb99d1">Manette::changerAxeXJoystickDroit()</a>, <a class="el" href="class_manette.html#a82a0d2535dd1dd9ea4021aa1fe71b1bc">Manette::changerAxeXJoystickGauche()</a>, <a class="el" href="class_manette.html#aaedc46e870b2731a79c5497296dba469">Manette::changerAxeYJoystickDroit()</a>, et <a class="el" href="class_manette.html#a6fd30466571a96d9789c54c8e8104ab2">Manette::changerAxeYJoystickGauche()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 3 Avril 2020 14:37:10 pour ROV&#39;NET par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

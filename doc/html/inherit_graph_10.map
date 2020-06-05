@@ -1,0 +1,7 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_q_widget.html" title="La classe QWidget est la classe de base de tous les objets graphiques d&#39;interface utilisateur..." alt="" coords="5,81,79,108"/>
+<area shape="rect" id="node2" href="$class_i_h_m_accueil.html" title="Class permettant de créer une nouvelle campagne, reprendre une campagne mise en pause, archiver une campagne, supprimer une campagne, accéder à la base de données et configurer le matériel. " alt="" coords="145,5,236,32"/>
+<area shape="rect" id="node3" href="$class_i_h_m_album_photo.html" title="Class permettant de visualiser les photos en cours de campagne. " alt="" coords="131,56,250,83"/>
+<area shape="rect" id="node4" href="$class_i_h_m_reglage_video.html" title="Classe permettant de regler l&#39;affichage du flux video. " alt="" coords="127,107,255,133"/>
+<area shape="rect" id="node5" href="$class_i_h_m_rov.html" title="IHM permettant d&#39;obtenir le flux vidéo en direct placé sur le robot et d&#39;obtenir les informations rel..." alt="" coords="155,157,226,184"/>
+</map>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ROV&#39;NET:  Fichier source de communicationrov.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone_robot.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ROV&#39;NET
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2020</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e845099e14ed0e1cd96f527541cef148.html">Projet_Rovnet</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">communicationrov.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="communicationrov_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef COMMUNICATIONROV_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define COMMUNICATIONROV_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QSerialPort&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//#define MODE_CONNECTE</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="communicationrov_8h.html#aa527cd5549b27f11b24e5879e73abbee">   16</a></span>&#160;<span class="preprocessor">#define CONFIGURATION_MANUELLE</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_configuration.html">   23</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_configuration.html">Configuration</a></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_configuration.html#acc40b4f298cb215a94fb43976ef7d3a8">   25</a></span>&#160;    QString <a class="code" href="struct_configuration.html#acc40b4f298cb215a94fb43976ef7d3a8">port</a>;    </div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_configuration.html#ab714d6036189bf451e566e6c6a971c85">   26</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_configuration.html#ab714d6036189bf451e566e6c6a971c85">debit</a>;       </div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_configuration.html#a37e0691e4a25b11bd86a52bc68c81f93">   27</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_configuration.html#a37e0691e4a25b11bd86a52bc68c81f93">bitsDonnees</a>; </div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_configuration.html#a9c24ff9a3e5a24b14e1ac8bc03de907d">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_configuration.html#a9c24ff9a3e5a24b14e1ac8bc03de907d">bitStop</a>;     </div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_communication_rov.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_communication_rov.html">CommunicationRov</a> : <span class="keyword">public</span> <a class="code" href="class_q_object.html">QObject</a></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">   41</a></span>&#160;    QSerialPort *<a class="code" href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">port</a>;            </div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">   42</a></span>&#160;    QByteArray <a class="code" href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">donnees</a>;           </div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_communication_rov.html#a2f5a49875a9fa51800522c531ecc65fc">   43</a></span>&#160;    QString <a class="code" href="class_communication_rov.html#a2f5a49875a9fa51800522c531ecc65fc">trameRecue</a>;           </div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_communication_rov.html">CommunicationRov</a>(<a class="code" href="class_q_object.html">QObject</a> *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    ~<a class="code" href="class_communication_rov.html">CommunicationRov</a>();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> ouvrirPort();</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> setConfiguration(<a class="code" href="struct_configuration.html">Configuration</a> maConfiguration);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> emettreTrame(QString trame);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;signals:</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> nouvelleTrame(QString trame);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> recevoir();</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif // COMMUNICATIONROV_H</span></div><div class="ttc" id="struct_configuration_html_ab714d6036189bf451e566e6c6a971c85"><div class="ttname"><a href="struct_configuration.html#ab714d6036189bf451e566e6c6a971c85">Configuration::debit</a></div><div class="ttdeci">int debit</div><div class="ttdoc">Attribut définissant la vitesse en bits/s de la communication. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:26</div></div>
+<div class="ttc" id="struct_configuration_html"><div class="ttname"><a href="struct_configuration.html">Configuration</a></div><div class="ttdoc">structure permettant de configurer une communication </div><div class="ttdef"><b>Definition:</b> communicationrov.h:23</div></div>
+<div class="ttc" id="class_communication_rov_html_a21b62067ef0b2a6aec339df60b4abd72"><div class="ttname"><a href="class_communication_rov.html#a21b62067ef0b2a6aec339df60b4abd72">CommunicationRov::port</a></div><div class="ttdeci">QSerialPort * port</div><div class="ttdoc">accède a la configuration de la liaison série </div><div class="ttdef"><b>Definition:</b> communicationrov.h:41</div></div>
+<div class="ttc" id="struct_configuration_html_a37e0691e4a25b11bd86a52bc68c81f93"><div class="ttname"><a href="struct_configuration.html#a37e0691e4a25b11bd86a52bc68c81f93">Configuration::bitsDonnees</a></div><div class="ttdeci">int bitsDonnees</div><div class="ttdoc">Attribut définissant le nombre de bits de données de la communication. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:27</div></div>
+<div class="ttc" id="class_communication_rov_html_a2f5a49875a9fa51800522c531ecc65fc"><div class="ttname"><a href="class_communication_rov.html#a2f5a49875a9fa51800522c531ecc65fc">CommunicationRov::trameRecue</a></div><div class="ttdeci">QString trameRecue</div><div class="ttdoc">Derniere trameRecue. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:43</div></div>
+<div class="ttc" id="class_communication_rov_html"><div class="ttname"><a href="class_communication_rov.html">CommunicationRov</a></div><div class="ttdoc">Class permettant de mettre en place une communication avec le rov. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:37</div></div>
+<div class="ttc" id="struct_configuration_html_a9c24ff9a3e5a24b14e1ac8bc03de907d"><div class="ttname"><a href="struct_configuration.html#a9c24ff9a3e5a24b14e1ac8bc03de907d">Configuration::bitStop</a></div><div class="ttdeci">int bitStop</div><div class="ttdoc">Attribut définissant le nombre de bits de stop de la communication. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:28</div></div>
+<div class="ttc" id="struct_configuration_html_acc40b4f298cb215a94fb43976ef7d3a8"><div class="ttname"><a href="struct_configuration.html#acc40b4f298cb215a94fb43976ef7d3a8">Configuration::port</a></div><div class="ttdeci">QString port</div><div class="ttdoc">Attribut définissant le nom d&amp;#39;un port. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:25</div></div>
+<div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div><div class="ttdoc">La classe QObject est la classe de base de tous les objets Qt. Elle permet à ces objets Qt de dispose...</div></div>
+<div class="ttc" id="class_communication_rov_html_acbb6939bb597179956c6f4bc5ca39f3f"><div class="ttname"><a href="class_communication_rov.html#acbb6939bb597179956c6f4bc5ca39f3f">CommunicationRov::donnees</a></div><div class="ttdeci">QByteArray donnees</div><div class="ttdoc">Tableau contenant les données bruts envoyé depuis la liason série. </div><div class="ttdef"><b>Definition:</b> communicationrov.h:42</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 3 Avril 2020 14:37:10 pour ROV&#39;NET par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_q_object.html" title="La classe QObject est la classe de base de tous les objets Qt. Elle permet à ces objets Qt de dispose..." alt="" coords="5,107,76,133"/>
+<area shape="rect" id="node2" href="$class_base_de_donnees.html" title="Class permettant de s&#39;interfacer avec la base de données. " alt="" coords="132,5,253,32"/>
+<area shape="rect" id="node3" href="$class_campagne.html" title="Class contenant les informations de la campagne en cours. " alt="" coords="150,56,235,83"/>
+<area shape="rect" id="node4" href="$class_capteurs.html" title="Classe contenant les dernières informations issues des capteurs du rov. " alt="" coords="155,107,230,133"/>
+<area shape="rect" id="node5" href="$class_communication_rov.html" title="Class permettant de mettre en place une communication avec le rov. " alt="" coords="124,157,261,184"/>
+<area shape="rect" id="node6" href="$class_rov.html" title="Classe controlant tout les traitements en provenance et en direction de la communication avec le rov..." alt="" coords="169,208,216,235"/>
+</map>
